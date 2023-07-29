@@ -6,8 +6,6 @@ from . import app, db
 from .forms import URLMapForm
 from .models import URLMap
 
-db.create_all()
-
 
 def get_unique_short_id():
     return str(random())[-6:]
