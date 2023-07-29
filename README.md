@@ -50,6 +50,14 @@ FLASK_ENV=production
 DATABASE_URI=sqlite:///db.sqlite3
 SECRET_KEY=MY SECRET KEY
 ```
+Для создания базы данных со всеми таблицами введите команды:
+
+```
+flask shell
+from yacut import db
+db.create_all()
+exit()
+```
 
 ## Об авторе
 Разработано:
