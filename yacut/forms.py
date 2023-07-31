@@ -16,7 +16,10 @@ class URLMapForm(FlaskForm):
         validators=[
             Length(1, 16),
             Optional(),
-            Regexp(SHORT_ID_PATTERN, message='a-z, A-Z, 0-9 - only')
+            Regexp(SHORT_ID_PATTERN,
+                   message='короткий идентификатор должен быть не длинее '
+                           '16 символов и содержать только буквы латинского '
+                           'алфавита и цифры (a-z, A-Z, 0-9)')
         ]
     )
     submit = SubmitField('Создать')

@@ -42,7 +42,7 @@ pip install -r requirements.txt
 ```
 
 В корне проекта создайте .env файл.
-Формат .env файла:
+Формат .env файла (смотри .env.example) :
 
 ```
 FLASK_APP=yacut
@@ -58,6 +58,11 @@ from yacut import db
 db.create_all()
 exit()
 ```
+## Основные технологии
+- [Python](https://www.python.org/)
+- [Flask](https://flask.palletsprojects.com/)
+- [SQLAlchemy](https://www.sqlalchemy.org/)
+- [Flask-WTF](https://flask-wtf.readthedocs.io/en/1.1.x/)
 
 ## Об авторе
 Разработано:
